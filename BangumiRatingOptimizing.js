@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name        评分显示优化
-// @namespace   https://bgm.tv/user/yanber
-// @version     1.2
-// @description 在番剧详情页面显示评分的更多位小数以及总体标准偏差
-// @author      ruocaled , fifth , yanber
-// @include     /^https?:\/\/(bangumi|bgm|chii)\.(tv|in)\/subject\/.*$/
-// @grant       none
+// @name         评分显示优化
+// @namespace    https://bgm.tv/user/yanber
+// @version      1.2
+// @description  在番剧详情页面显示评分的更多位小数以及总体标准偏差
+// @author       ruocaled , fifth , yanber
+// @include      /^https?:\/\/(bangumi|bgm|chii)\.(tv|in)\/subject\/.*$/
+// @grant        none
 // ==/UserScript==
 let a=0;
 let total = $("#ChartWarpper > div > small > span").text();
