@@ -7,7 +7,7 @@
 // @include      /^https?:\/\/(bangumi|bgm|chii)\.(tv|in)\/subject\/.*$/
 // ==/UserScript==
 
-let a=0;
+let a = 0;
 let total = $("#ChartWarpper > div > small > span").text();
 if (total == 0) return;
 let scores = $(".horizontalChart .count").text().replace(/\)|\(/g," ").trim().split(/\s+/).map(Number);
@@ -26,7 +26,7 @@ if(deviation<1.2){
     dispute = "厨黑大战";
 }
 $(".global_score .number").text(mean.toFixed(4));
-$("#ChartWarpper").append("标准差： " + deviation + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可靠度： " + dispute);
+$("#ChartWarpper").append("标准差： " + deviation + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可信度： " + dispute);
 function calculateSD(scores, mean, n) {
     let sd = 0;
     scores.forEach(function (elem, index) {
