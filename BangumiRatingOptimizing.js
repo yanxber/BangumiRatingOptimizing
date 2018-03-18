@@ -7,6 +7,7 @@
 // @include      /^https?:\/\/(bangumi|bgm|chii)\.(tv|in)\/subject\/.*$/
 // @grant        none
 // ==/UserScript==
+
 let a=0;
 let total = $("#ChartWarpper > div > small > span").text();
 if (total == 0) return;
