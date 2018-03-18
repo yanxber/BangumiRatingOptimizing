@@ -1,1 +1,1 @@
-# BangumiRatingOptimizing
+Bangumi条目评分显示优化
