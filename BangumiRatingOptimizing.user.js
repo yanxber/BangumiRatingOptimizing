@@ -2,10 +2,9 @@
 // @name         评分显示优化
 // @namespace    https://bgm.tv/user/yanber
 // @version      1.2
-// @description  在番剧详情页面显示评分的更多位小数以及总体标准偏差
+// @description  在番剧详情页面显示评分的更多位小数和总体标准偏差
 // @author       ruocaled , fifth , yanber
 // @include      /^https?:\/\/(bangumi|bgm|chii)\.(tv|in)\/subject\/.*$/
-// @grant        none
 // ==/UserScript==
 
 let a=0;
@@ -27,7 +26,7 @@ if(deviation<1.2){
     dispute = "厨黑大战";
 }
 $(".global_score .number").text(mean.toFixed(4));
-$("#ChartWarpper").append("标准差： " + deviation + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 争议度： "+ dispute);
+$("#ChartWarpper").append("标准差： " + deviation + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可靠度： " + dispute);
 function calculateSD(scores, mean, n) {
     let sd = 0;
     scores.forEach(function (elem, index) {
