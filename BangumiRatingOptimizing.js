@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        评分显示优化
-// @namespace   https://bgm.tv/user/yanber
+// @namespace   https://github.com/yanxber
 // @version     1.2
 // @description 在番剧详情页面显示评分的更多位小数以及总体标准偏差
 // @author      ruocaled , fifth , yanber
